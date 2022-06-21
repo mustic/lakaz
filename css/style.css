@@ -122,6 +122,8 @@ ENTETE
 
 .menu1 {
     min-height: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .menusite {
@@ -131,18 +133,11 @@ ENTETE
     margin-bottom: auto;
 }
 
-.menusite .droite {
+ .droite {
     padding-right: 200px;
 }
 
-.menusite ul li a {
-    color: white;
-    font-family: 'open_sansregular';
-    font-size: 16px;
-    font-weight: 400;
-    padding: 0px 20px 0px 20px;
-    text-transform: uppercase;
-}
+
 
 .boutons {
     width: 350px; 
@@ -209,22 +204,7 @@ font-family: 'open_sansregular';
 
 /*Attacher le menu */
 
-.fixe {
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(250, 250, 250, 0.99);
-    box-shadow: 0 2px 11px -2px rgba(0, 0, 0, 0.7);
-    min-height: 60px; 
-}
 
-.fixe ul li a {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.95rem; 
-        color:  #5db84c;
-}
 
 /***************************************************
 MAIN
@@ -269,16 +249,12 @@ MAIN
     padding-bottom: 60px;
 }
 
-.faitmaison {
-    /*    border: 1px solid green;*/
-    background-color: white;
-    width: 500px;
-    /*    min-height: 300px;*/
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 25px 25px 25px 25px;
-}
 
+
+.faitmaison ul :nth-child(4)
+{
+    
+}
 .faitmaison h2 {
     font-family: 'open_sansregular';
     font-size: 35px;
@@ -862,5 +838,52 @@ background-color: #5db84c;
 .widget a {
     color: black;
     line-height: 150%;
+}
+
+/*********************************************** MODIFICATIONS YANIS *********************************************************/
+
+.faitmaison ul {
+    /*    border: 1px solid green;*/
+   display: flex;
+   flex-direction: column;
+   
+
+}
+
+.faitmaison li
+{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+
+
+.menusite ul li a {
+    color: white;
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
+}
+
+.menusite ul
+{
+    display: flex;
+}
+
+#logo img
+{
+    width: 100px;
+    height: 100px;
 }
 
